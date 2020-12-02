@@ -1,12 +1,13 @@
 package day2;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Task4 {
 
     public static void main(String[] args) {
         Scanner scannerX = new Scanner(System.in);
-
+//        scannerX.useLocale(Locale.ENGLISH);
         double x = scannerX.nextDouble();
         double y;
 
