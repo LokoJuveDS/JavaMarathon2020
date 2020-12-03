@@ -32,12 +32,12 @@ public class Task1 {
             }
             if (array[i] % 2 == 0) {
                 evenNumbers++;
+            } else {
+                oddNumbers++;
             }
             sum += array[i];
 
         }
-        //зачем проверять каждый раз на нечётность, если можно сразу вычесть посчитанные чётные
-        oddNumbers = array.length - evenNumbers;
 
         System.out.println("Длина массива: " + array.length);
         System.out.println("Количество чисел больше 8: " + countOfNumberGreatThanEight);
