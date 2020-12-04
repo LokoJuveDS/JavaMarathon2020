@@ -31,7 +31,7 @@ public class Task3 {
                 matrix[i][j] = random.nextInt(51);
                 System.out.print(matrix[i][j] + " ");
                 tempSum += matrix[i][j];
-                if (tempSum > maxSum) {
+                if (tempSum >= maxSum) {
                     maxSum = tempSum;
                     indexOfMaxSumRow = i;
                 }

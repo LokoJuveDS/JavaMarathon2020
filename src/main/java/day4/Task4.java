@@ -35,6 +35,7 @@ public class Task4 {
             for (int j = i; j < i + groupOFNumbers; j++) {
                 tempSum += array[j];
             }
+
             if (tempSum > maxSumOfGroupNumbers) {
                 maxSumOfGroupNumbers = tempSum;
                 indexOfFirstElementOfGroupWithMaxSum = i;
@@ -43,5 +44,6 @@ public class Task4 {
 
         System.out.println("Максимальная сумма группы из " + groupOFNumbers + " чисел: " + maxSumOfGroupNumbers);
         System.out.println("Индекс первого элемента группы из " + groupOFNumbers + " чисел с максимальной суммой: " + indexOfFirstElementOfGroupWithMaxSum);
+
     }
 }
