@@ -7,6 +7,7 @@
 //import static org.junit.jupiter.api.Assertions.assertEquals;
 //
 //public class Day6CarTest extends AbstractTest {
+//
 //    Car car = new Car();
 //
 //    @Test
@@ -17,7 +18,7 @@
 //
 //    @Test
 //    public void yearDifference() {
-//        car.setYear(2020);
+//        car.setYearOfCarManufacture(2020);
 //        int diff = car.yearDifference(1980);
 //        assertEquals(40, diff, "Год выпуска автомобиля 2020, год для сравнения 1980");
 //    }
