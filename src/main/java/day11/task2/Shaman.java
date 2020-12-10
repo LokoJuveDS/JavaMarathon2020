@@ -2,8 +2,12 @@ package day11.task2;
 
 public class Shaman extends Hero implements PhysAttack, MagicAttack, Healer {
 
-    public Shaman(int health, int physAtt, int magicAtt, int physDef, int magicDef) {
-        super(health, physAtt, magicAtt, physDef, magicDef);
+    public Shaman() {
+        super.getHealth();
+        setPhysAtt(10);
+        setMagicAtt(15);
+        setPhysDef(20);
+        setMagicDef(20);
     }
 
     @Override

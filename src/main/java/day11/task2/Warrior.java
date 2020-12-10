@@ -2,8 +2,11 @@ package day11.task2;
 
 public class Warrior extends Hero implements PhysAttack {
 
-    public Warrior(int health, int physAtt, int magicAtt, int physDef, int magicDef) {
-        super(health, physAtt, magicAtt, physDef, magicDef);
+    public Warrior() {
+        super.getHealth();
+        setPhysAtt(30);
+        setPhysDef(80);
+        setMagicDef(0);
     }
 
     @Override

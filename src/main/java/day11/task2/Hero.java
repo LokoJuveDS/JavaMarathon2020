@@ -2,18 +2,13 @@ package day11.task2;
 
 public abstract class Hero {
 
-    private int health;
+    private int health = 100;
     private int physAtt;
     private int magicAtt;
     private int physDef;
     private int magicDef;
 
-    public Hero(int health, int physAtt, int magicAtt, int physDef, int magicDef) {
-        this.health = health;
-        this.physAtt = physAtt;
-        this.magicAtt = magicAtt;
-        this.physDef = physDef;
-        this.magicDef = magicDef;
+    public Hero() {
     }
 
     public void setHealth(int health) {

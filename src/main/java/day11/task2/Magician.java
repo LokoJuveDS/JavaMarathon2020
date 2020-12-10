@@ -2,8 +2,12 @@ package day11.task2;
 
 public class Magician extends Hero implements PhysAttack, MagicAttack {
 
-    public Magician(int health, int physAtt, int magicAtt, int physDef, int magicDef) {
-        super(health, physAtt, magicAtt, physDef, magicDef);
+    public Magician() {
+        super.getHealth();
+        setPhysAtt(5);
+        setMagicAtt(20);
+        setPhysDef(0);
+        setMagicDef(80);
     }
 
     @Override
