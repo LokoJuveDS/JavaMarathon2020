@@ -66,7 +66,7 @@
 //        Inject.field("salary").of(courier).with(1000);
 //        Inject.field("countDeliveredOrders").of(w).with(8_000);
 //        courier.bonus();
-//        assertEquals("Бонус пока не доступен" + System.lineSeparator(), getOutput(),
+//        assertEquals("Бонус пока недоступен" + System.lineSeparator(), getOutput(),
 //                "Расчет бонуса курьера при 8 000 countDeliveredOrders Warehouse, 1000 salary Courier");
 //
 //    }

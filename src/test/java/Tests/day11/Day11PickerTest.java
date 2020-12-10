@@ -66,7 +66,7 @@
 //        Inject.field("salary").of(picker).with(1000);
 //        Inject.field("countPickedOrders").of(w).with(8_000);
 //        picker.bonus();
-//        assertEquals("Бонус пока не доступен" + System.lineSeparator(), getOutput(),
+//        assertEquals("Бонус пока недоступен" + System.lineSeparator(), getOutput(),
 //                "Расчет бонуса сборщика при countOrders = 8 000 (Warehouse), salary = 1000 (Picker)");
 //    }
 //
