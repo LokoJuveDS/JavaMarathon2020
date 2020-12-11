@@ -1,12 +1,14 @@
 package day11.task2;
 
+import java.lang.reflect.Field;
+
 public class Warrior extends Hero implements PhysAttack {
 
     public Warrior() {
         super.getHealth();
-        setPhysAtt(30);
-        setPhysDef(80);
-        setMagicDef(0);
+        physAtt = 30;
+        physDef = 80;
+        magicDef = 0;
     }
 
     @Override

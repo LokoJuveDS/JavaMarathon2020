@@ -4,9 +4,9 @@ public class Paladin extends Hero implements PhysAttack, Healer {
 
     public Paladin() {
         super.getHealth();
-        setPhysAtt(15);
-        setPhysDef(50);
-        setMagicDef(20);
+        physAtt = 15;
+        physDef = 50;
+        magicDef = 20;
     }
 
     @Override

@@ -29,6 +29,5 @@
 //        MusicBand.transferMembers(band1, band2);
 //        assertEquals(0, band1.getMembers().size(), "Участники: гр. А = 4, гр. В = 3. После объединения в группе А");
 //        assertEquals(7, band2.getMembers().size(), "Участники: гр. А = 4, гр. В = 3. После объединения в группе В");
-//
 //    }
 //}

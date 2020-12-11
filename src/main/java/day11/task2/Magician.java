@@ -4,10 +4,10 @@ public class Magician extends Hero implements PhysAttack, MagicAttack {
 
     public Magician() {
         super.getHealth();
-        setPhysAtt(5);
-        setMagicAtt(20);
-        setPhysDef(0);
-        setMagicDef(80);
+        physAtt = 5;
+        magicAtt = 20;
+        physDef = 0;
+        magicDef = 80;
     }
 
     @Override

@@ -1,4 +1,9 @@
-package day11.task2;
+package day11.task2.Main;
+
+import day11.task2.Magician;
+import day11.task2.Paladin;
+import day11.task2.Shaman;
+import day11.task2.Warrior;
 
 public class Task2 {
 
