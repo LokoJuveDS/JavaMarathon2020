@@ -27,16 +27,16 @@ public class Task3 {
             String text = sb.toString();
             Pattern namePlusAge = Pattern.compile("(\\w+)(\\s+)(-?\\d+)");
             Matcher matcher = namePlusAge.matcher(text);
-            while (matcher.find()) {
-                if (Integer.parseInt(matcher.group(3)) < 0) {
-                    try {
+            try {
+                while (matcher.find()) {
+                    if (Integer.parseInt(matcher.group(3)) < 0) {
                         throw new IOException();
-                    } catch (IOException e) {
-                        System.out.println("Некорректный входной файл");
-                        return personList = new ArrayList<>();
                     }
+                    personList.add(new Person((matcher.group(1)), (Integer.parseInt(matcher.group(3)))));
                 }
-                personList.add(new Person((matcher.group(1)), (Integer.parseInt(matcher.group(3)))));
+            } catch (IOException e) {
+                System.out.println("Некорректный входной файл");
+                return personList = new ArrayList<>();
             }
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");

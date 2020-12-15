@@ -37,18 +37,17 @@ public class Task2 {
             Pattern namePlusAge = Pattern.compile("(\\w+)(\\s+)(-?\\d+)");
             Matcher matcher = namePlusAge.matcher(text);
             // пока матчер true
-            while (matcher.find()) {
-                // то проверяем Группу с числом на отрицательность и возвращаем пустой массив (или null)
-                if (Integer.parseInt(matcher.group(3)) < 0) {
-                    try {
+            try {
+                while (matcher.find()) {
+                    // то проверяем Группу с числом на отрицательность и возвращаем пустой массив (или null)
+                    if (Integer.parseInt(matcher.group(3)) < 0)
                         throw new IOException();
-                    } catch (IOException e) {
-                        System.out.println("Некорректный входной файл");
-                        return stringList = new ArrayList<>();
-                    }
+                    // если возраст положительный, до добавляем в список элемент
+                    stringList.add(matcher.group(1) + " " + matcher.group(3));
                 }
-                // если возраст положительный, до добавляем в список элемент
-                stringList.add(matcher.group(1) + " " + matcher.group(3));
+            } catch (IOException e) {
+                System.out.println("Некорректный входной файл");
+                return stringList = new ArrayList<>();
             }
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
