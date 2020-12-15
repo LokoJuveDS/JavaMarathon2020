@@ -17,12 +17,7 @@ public class Task1 {
             String line = scanner.nextLine();
             String[] numbersString = line.split(" ");
             if (numbersString.length != 10) {
-                try {
-                    throw new Exception();
-                } catch (Exception e) {
-                    System.out.println("Некорректный входной файл");
-                    return;
-                }
+                throw new IllegalArgumentException();
             }
             int[] numbers = new int[numbersString.length];
             int sum = 0;
@@ -30,16 +25,12 @@ public class Task1 {
                 numbers[i] = Integer.parseInt(numbersString[i]);
                 sum += numbers[i];
             }
-            // сделал сначала так, но тут создается переменная лишняя
-//            int counter = 0;
-//            for (String number : numbersString) {
-//                numbers[counter] = Integer.parseInt(number);
-//                sum += numbers[counter++];
-//            }
             System.out.println(sum);
             scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Некорректный входной файл");
         }
     }
 }
