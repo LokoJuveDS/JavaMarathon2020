@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Task1 {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         File fileInput = new File("src/main/resources/shoes.csv");
         File fileOutput = new File("src/main/resources/missing_shoes.txt");
         try {
